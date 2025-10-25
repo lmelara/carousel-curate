@@ -42,24 +42,24 @@ const Carousel3D = ({ projects }: Carousel3DProps) => {
   };
 
   return (
-    <div className="relative w-full h-[500px] md:h-[700px] flex items-center justify-center perspective-1000">
+    <div className="relative w-full h-[380px] sm:h-[420px] md:h-[500px] lg:h-[600px] flex items-center justify-center perspective-1000 px-4">
       {/* Navigation Buttons */}
       <Button
         variant="ghost"
         size="icon"
         onClick={handlePrevious}
-        className="absolute left-2 md:left-8 z-30 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
+        className="absolute left-1 sm:left-2 md:left-8 z-30 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
       >
-        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
       </Button>
 
       <Button
         variant="ghost"
         size="icon"
         onClick={handleNext}
-        className="absolute right-2 md:right-8 z-30 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
+        className="absolute right-1 sm:right-2 md:right-8 z-30 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
       >
-        <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
       </Button>
 
       {/* Project Cards */}
