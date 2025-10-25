@@ -42,24 +42,24 @@ const Carousel3D = ({ projects }: Carousel3DProps) => {
   };
 
   return (
-    <div className="relative w-full h-[700px] flex items-center justify-center perspective-1000">
+    <div className="relative w-full h-[500px] md:h-[700px] flex items-center justify-center perspective-1000">
       {/* Navigation Buttons */}
       <Button
         variant="ghost"
         size="icon"
         onClick={handlePrevious}
-        className="absolute left-8 z-30 w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
+        className="absolute left-2 md:left-8 z-30 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
       </Button>
 
       <Button
         variant="ghost"
         size="icon"
         onClick={handleNext}
-        className="absolute right-8 z-30 w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
+        className="absolute right-2 md:right-8 z-30 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background shadow-card"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
       </Button>
 
       {/* Project Cards */}

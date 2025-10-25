@@ -13,7 +13,7 @@ const Navigation = () => {
             <span className="text-xl font-semibold tracking-tight">AI Portfolio</span>
           </div>
           
-          <div className="hidden md:flex items-center gap-8">
+          <div className="flex items-center gap-6 md:gap-8">
             <a href="#work" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Work
             </a>
@@ -25,13 +25,6 @@ const Navigation = () => {
             </a>
           </div>
 
-          <Button size="sm" className="hidden md:flex bg-gradient-primary text-primary-foreground hover:opacity-90">
-            Get in Touch
-          </Button>
-
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="w-5 h-5" />
-          </Button>
         </div>
       </div>
     </nav>
