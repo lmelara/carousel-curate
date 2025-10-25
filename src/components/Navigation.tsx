@@ -3,24 +3,27 @@ import { User, Menu } from "lucide-react";
 
 const Navigation = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
+      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
-              <User className="w-5 h-5 text-muted-foreground" />
+          <div className="flex items-center gap-2">
+            <div className="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+              <User className="w-4 h-4 text-primary" />
             </div>
-            <span className="text-xl font-semibold tracking-tight">AI Portfolio</span>
+            <div className="flex flex-col leading-none">
+              <span className="text-sm font-semibold tracking-tight">Levi</span>
+              <span className="text-sm font-semibold tracking-tight">Melara</span>
+            </div>
           </div>
-          
+
           <div className="flex items-center gap-6 md:gap-8">
-            <a href="#work" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            <a href="#work" className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
               Work
             </a>
-            <a href="#about" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            <a href="#about" className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
               About
             </a>
-            <a href="#contact" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            <a href="#contact" className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
               Contact
             </a>
           </div>
