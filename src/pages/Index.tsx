@@ -14,28 +14,15 @@ const Index = () => {
 
       <main className="pt-16">
         {/* Portfolio Section */}
-        <section id="work" className="min-h-screen flex flex-col justify-center px-4 md:px-8 py-24 md:py-32">
-          <div className="max-w-7xl mx-auto w-full space-y-8 md:space-y-12">
-            <div className="text-center space-y-3 md:space-y-4 animate-fade-in">
-              <h1 className="text-[clamp(1.375rem,4.5vw,2.25rem)] font-bold tracking-tight leading-[1.3] max-w-2xl mx-auto">
-                Building Intelligence
-                <span className="block text-primary mt-1">
-                  Across Domains
-                </span>
-              </h1>
-              <p className="text-[clamp(0.875rem,2.8vw,1rem)] text-muted-foreground max-w-xl mx-auto px-2 leading-[1.5]">
-                AI engineer crafting solutions from machine learning to design — driven by curiosity,
-                measured by impact.
-              </p>
-            </div>
-
+        <section id="work" className="min-h-screen flex flex-col justify-center px-4 md:px-8 py-16 md:py-24">
+          <div className="max-w-7xl mx-auto w-full space-y-6 md:space-y-10">
             {/* 3D Carousel */}
             <div className="w-full">
               <Carousel3D projects={filteredProjects} />
             </div>
 
             {/* Domain Selector - Inside Portfolio Section */}
-            <div className="w-full pt-6 md:pt-8">
+            <div className="w-full pt-4 md:pt-6">
               <DomainSelector
                 domains={domains}
                 selectedDomain={selectedDomain}
